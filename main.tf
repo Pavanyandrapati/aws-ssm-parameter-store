@@ -1,6 +1,7 @@
 resource "aws_ssm_parameter" "parameter" {
-  name  = "test.test1"
+  count=var.parameters[count.index]
+  name  = var.parameters[count.index].name
   type  = "String"
-  value = "pavan"
+  value = var.parameters[count.index].value
 
 }
