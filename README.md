@@ -1,1 +1,1 @@
-# aws-ssm-parameter-store
+# aws-ssm-paramter-store
